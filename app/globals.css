@@ -64,7 +64,23 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+}import '../styles/globals.css';
+import Head from 'next/head';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>ProfitX - Smart Trading Assistant</title>
+        <meta name="description" content="Your advanced trading assistant" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
+
  
 @layer base {
   * {
