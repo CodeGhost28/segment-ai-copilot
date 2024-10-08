@@ -69,4 +69,15 @@ export function Header() {
       </div>
     </header>
   )
-}
+}const Header = () => (
+  <header>
+    <h1>ProfitX</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/signals">Trading Signals</a>
+    </nav>
+  </header>
+);
+
+export default Header;
+
